@@ -1,6 +1,4 @@
 spring:
-    application:
-      name: zhujc-supplier-manager
     datasource:
         name: orcl
         url: '{cipher}7f6e0a857f211f41fb3c909360eb0bafce3cb19e8e35ac04e2947aa101bd7a0224b9dae2465dad2abc2e0c8069065268403979fb7db3fad6b8b825a69228e84b36ce584d2f1a4a1908b62f5a2321b575ae41f620b944955e858cc88e84d24084c6edcce26cf54185c8849e9f71406daf341438d65f34dc5fc90dbdef6fe5b3e0d31bfac2453ea1c28dace693ad98a2bd'
