@@ -30,3 +30,12 @@ pagehelper:
     reasonable: false
     supportMethodsArguments: true
     params: count=countSql
+feign:
+  client:
+    config:
+      default:
+        connectTimeout: 20000
+        readTimeout: 20000
+        loggerLevel: basic
+feign.hystrix.enabled: true
+hystrix.command.default.execution.isolation.thread.timeoutInMilliseconds: 20000
