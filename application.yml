@@ -37,5 +37,6 @@ feign:
         connectTimeout: 20000
         readTimeout: 20000
         loggerLevel: basic
-feign.hystrix.enabled: true
-hystrix.command.default.execution.isolation.thread.timeoutInMilliseconds: 20000
+feign:
+  hystrix:
+    enabled: true
