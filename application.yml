@@ -1,3 +1,4 @@
+profile: 123
 spring:
     datasource:
         name: orcl
