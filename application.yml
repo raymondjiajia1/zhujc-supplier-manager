@@ -1,11 +1,10 @@
+logUrl: 47.99.211.156:7701
 spring:
-    application:
-      name: zhujc-supplier-manager
     datasource:
         name: orcl
-        url: '{cipher}7f6e0a857f211f41fb3c909360eb0bafce3cb19e8e35ac04e2947aa101bd7a0224b9dae2465dad2abc2e0c8069065268403979fb7db3fad6b8b825a69228e84b36ce584d2f1a4a1908b62f5a2321b575ae41f620b944955e858cc88e84d24084c6edcce26cf54185c8849e9f71406daf341438d65f34dc5fc90dbdef6fe5b3e0d31bfac2453ea1c28dace693ad98a2bd'
-        username: '{cipher}2f78fd9e109b45fa49533b712873592ef946ce28acb2e429ddcca1fada99f115196332c794008163362620964c4729cf'
-        password: '{cipher}db86380f41b552d168ef10b250ace54fe85e8ab4e8c976353677646c439b05f1c456f3c81497a492d04a9ca221417aa5'
+        url: '{cipher}9b0286d140b255cf75aad16f32c10a041b63d4ea605206f9bfe96b6efa82433c745d453cbb3b414867bbb11abf4cd75b41065240aeb4cee18c72c01f4a46f25cd5d55adffd70b80ec2f109fc44641e932d738c6ae456b2dfa23fc0f05141ca2836791db50d78176ef1d191b5fb0808d9ba909e59fc5ccd62472891b7795a22c90752135fc4b4bc919bebe056feea8a9c'
+        username: '{cipher}610b8693936859af743ee1ff39a55d6993008a198aaacf382d9f8fbf9563fd6a'
+        password: '{cipher}9a280de981830f68f40b6bc29703992536b782ce999a6af19b4ea51252614746a300572713bc0c30fc6253e04b80f91e'
         # 使用druid数据源
         type: com.alibaba.druid.pool.DruidDataSource
         driver-class-name: com.mysql.jdbc.Driver
@@ -32,3 +31,12 @@ pagehelper:
     reasonable: false
     supportMethodsArguments: true
     params: count=countSql
+feign:
+  client:
+    config:
+      default:
+        connectTimeout: 20000
+        readTimeout: 20000
+        loggerLevel: basic
+  hystrix:
+    enabled: true
