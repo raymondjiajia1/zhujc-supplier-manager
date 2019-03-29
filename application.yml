@@ -1,4 +1,4 @@
-logUrl: localhost:7701
+logUrl: 47.99.211.156:7701
 spring:
     datasource:
         name: orcl
