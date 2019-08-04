@@ -1,4 +1,4 @@
-logUrl: 47.99.211.156:7701
+logUrl: 120.78.192.139:7701
 spring:
     datasource:
         name: orcl
